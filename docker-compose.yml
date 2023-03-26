@@ -4,14 +4,20 @@ services:
     image: raghu1026/first:v1
     ports:
       - "8000:80"
+    deploy:
+      replicas: 3
 
   second:
     image: raghu1026/second:v2
     ports:
       - "8001:80"
+    deploy:
+      replicas: 3
 
   third:
     image: raghu1026/third:v3
     ports: 
       - "8002:80"
+    deploy:
+      replicas: 3
 
